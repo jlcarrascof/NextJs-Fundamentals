@@ -1,25 +1,11 @@
-import Link from "next/link"
+import Navbar from './Navbar'
 
 export default function RootLayout({ children }) {
  return (
     <html>
-      <head>
-        <title>My Next Project</title>
-      </head>
-
       <body>
-        <nav>
-          <h1>Navbar</h1>
-        </nav>
+        <Navbar />
 
-        <ul>
-          <li>
-            <Link href="/">Home</Link>
-          </li>
-          <li>
-            <Link href="/about">About</Link>
-          </li>
-        </ul>    
         {children}
       </body>
     </html>
