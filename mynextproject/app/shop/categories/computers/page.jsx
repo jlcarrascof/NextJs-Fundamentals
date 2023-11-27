@@ -1,3 +1,7 @@
+export const metadata = { 
+  title: 'Computers section',
+}
+
 export default function Computers() {
     return (
       <div>
