@@ -1,4 +1,4 @@
-import Users from "../components/Users.jsx"
+import Users from "../components/Users"
 
 export const metadata = {
     title: "My Special Home Page",
@@ -7,7 +7,6 @@ export const metadata = {
 export default function HomePage() {
     //* server component
     return <section>
-        <h1>Hello World</h1>
         {/* client component */}
         <Users />
     </section>
