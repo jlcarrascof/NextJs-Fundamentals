@@ -1,8 +1,11 @@
+"use client"
 import { useEffect } from 'react'
 
 function Users() {
   
-  useEffect(() => {}, [])  
+  useEffect(() => {
+    alert('Users component mounted!')
+  }, [])  
 
   return (
     <div>Users</div>
