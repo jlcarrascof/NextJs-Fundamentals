@@ -1,6 +1,5 @@
 import { useEffect } from 'react'
 
-
 function Users() {
   
   useEffect(() => {}, [])  
