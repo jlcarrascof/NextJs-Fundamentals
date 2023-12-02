@@ -12,13 +12,7 @@ async function PostPages() {
         <div>
             {
                 posts.map((post) => (
-                    <div key={post.id}>
-                        <h3>{post.id}.- {post.title}</h3>
-                        <p>{post.body}</p>
-                        <button onClick={() => {}}>
-                            Click
-                        </button>
-                    </div>
+
                 ))
             }
         </div>
