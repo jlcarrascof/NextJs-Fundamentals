@@ -11,12 +11,13 @@ async function PostPages() {
     return (
         <div>
             {
-                posts.map((post) => {
+                posts.map((post) => (
                     <div key={post.id}>
+                        <h4>{post.id}</h4>
                         <h3>{post.title}</h3>
                         <p>{post.body}</p>
                     </div>
-                })
+                ))
             }
         </div>
     );
