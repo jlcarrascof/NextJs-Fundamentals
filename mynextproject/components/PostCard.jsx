@@ -1,9 +1,13 @@
+'use client'
+
 function PostCard({ post }) {
     return (
-        <div key={post.id}>
+        <div>
             <h3>{post.id}.- {post.title}</h3>
             <p>{post.body}</p>
-            <button onClick={() => {}}>
+            <button onClick={() => {
+                alert(`You clicked ${post.id}`)
+            }}>
                 Click
             </button>
         </div>
