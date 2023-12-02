@@ -5,7 +5,6 @@ export const metadata = {
   title: 'Mi tienda con Next.js - HomePage',
   description: 'Esta es la página de inicio de mi tienda con Next.js',
   keywords: 'tienda, next.js, ecommerce',
-
 }
 
 const roboto = Roboto({

@@ -5,7 +5,7 @@ import { useEffect } from 'react'
 function Users() {
   
   useEffect(() => {
-    alert('Users component mounted!')
+    // alert('Users component mounted!')
   }, [])  
 
   return (
