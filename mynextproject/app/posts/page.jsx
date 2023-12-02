@@ -7,11 +7,19 @@ async function loadPosts() {
 async function PostPages() {
     
     const posts = await loadPosts()
-    console.log(posts)
-    
+
     return (
-        <div>PostPages</div>
-    )
+        <div>
+            {
+                posts.map((post) => {
+                    <div key={post.id}>
+                        <h3>{post.title}</h3>
+                        <p>{post.body}</p>
+                    </div>
+                })
+            }
+        </div>
+    );
 }
 
 export default PostPages
