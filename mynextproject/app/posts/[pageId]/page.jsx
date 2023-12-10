@@ -1,15 +1,18 @@
 async function loadPost(id) {
   const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`)
   const data = await res.json()
-  console.log(data)
+  return data
 }  
 
 async function Page({ params }) {
   
-  await loadPost(params.pageId)
+  const post = await loadPost(params.pageId)
   
   return (
-    <div>Post Page: { params.pageId}</div>
+    <div>
+      <h1>{ post.id }.- {post.title}</h1>
+      <p>{post.body}</p>
+    </div>
   )
 }
 
