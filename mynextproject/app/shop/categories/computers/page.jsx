@@ -1,3 +1,5 @@
+import PostCard from '../../../../components/PostCard'
+
 export const metadata = { 
   title: 'Computers section',
 }
