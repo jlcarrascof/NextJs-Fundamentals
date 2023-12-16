@@ -4,8 +4,9 @@ import './Navbar.css'
 export default function Navbar() {
   return (
     <nav className="navbar">
-        <h1>Curso de NextJS</h1>
-
+        <Link href="/">
+            <h1>Curso de NextJS</h1>
+        </Link>
         <ul>
             <li>
                 <Link href="/">Home</Link>
