@@ -1,4 +1,6 @@
-function Users() {
+"use client";
+
+function Users({ users }) {
   return (
     <ul>
         {users.map(user => (
