@@ -4,11 +4,12 @@ async function getUser(id) {
   return data.data
 }
 
-export default function UserPage({ params }) {
-  console.log(params)  
+async function UserPage({ params }) {
+  const user = await getUser(params.id)  
+  
   return (
-    <div>
-        <h1>User Page</h1>   
-    </div>
+    <div>{JSON.stringify(user)}</div>
   )
 }
+
+export default UserPage
