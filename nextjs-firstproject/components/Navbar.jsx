@@ -3,14 +3,14 @@ const { default: Link } = require("next/link");
 function Navbar() {
     return (
         <nav>
-            <Link>
+            <Link href="/">
                 Home
             </Link>
 
             <ul>
                 <li>
-                    <Link>
-                        Users
+                    <Link href="/about">
+                        About
                     </Link>
                 </li>
             </ul>        
