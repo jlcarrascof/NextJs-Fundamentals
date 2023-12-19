@@ -1,4 +1,4 @@
-const { default: Link } = require("next/link");
+import Link from 'next/link'
 
 function Navbar() {
     return (
@@ -17,3 +17,5 @@ function Navbar() {
         </nav>    
     )
 }
+
+export default Navbar
