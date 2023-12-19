@@ -1,8 +1,8 @@
-function UserPage({ params }) {
+export default function UserPage({ params }) {
   console.log(params)  
   return (
-    <div>UserPage</div>
+    <div>
+        <h1>User Page</h1>   
+    </div>
   )
 }
-
-export default UserPage
