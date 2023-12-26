@@ -1,8 +1,14 @@
+"use client";
+import { useRouter } from 'next/router';
+
 export const metadata = { 
   title: 'Acerca de mi tienda con Next.js',
 }
 
 export default function AboutPage() {
+  
+  const router = useRouter();
+
   return <section>
     <h1>About</h1>
     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut a 
@@ -16,5 +22,12 @@ export default function AboutPage() {
       totam dolores voluptatibus asperiores quod optio rerum pariatur vitae rem 
       molestias labore saepe aperiam reiciendis provident. Magnam est ullam eos 
       iste aut natus accusamus.</p>
+
+      <button className="bg-sky-400 px-3 py-2 rounded-md" 
+      onClick={() => {
+        router.push('/');
+      }}>
+        Click 
+      </button>
   </section>;
 }   
