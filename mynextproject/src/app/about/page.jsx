@@ -1,13 +1,15 @@
-"use client";
-import { useRouter } from 'next/router';
+"use client"
+import { useRouter } from 'next/navigation'
 
+/*
 export const metadata = { 
   title: 'Acerca de mi tienda con Next.js',
 }
+*/
 
 export default function AboutPage() {
   
-  const router = useRouter();
+  const router = useRouter()
 
   return <section>
     <h1>About</h1>
