@@ -1,6 +1,12 @@
-function UserPage({ params }) {
+"use client";
+import { useParams } from 'next/navigation'
+
+function UserPage() {
+
+    const params = useParams();
     console.log(params);
-  return (
+
+    return (
     <div>
         <button onClick={() => 
             console.log('Testing UserPage')
