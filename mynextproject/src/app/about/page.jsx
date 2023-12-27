@@ -27,6 +27,7 @@ export default function AboutPage() {
 
       <button className="bg-sky-400 px-3 py-2 rounded-md" 
       onClick={() => {
+        alert('Testing navigation');
         router.push('/');
       }}>
         Click 
